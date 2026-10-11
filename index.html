@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Developer Groups Chapter | Connect, Learn, Grow</title>
+  <meta name="description" content="Official Google Developer Groups community portal featuring technical workshops, cloud architecture summits, on-device AI engineering, and developer networking.">
+  <link rel="canonical" href="https://gdg-community.dev/">
+
+  <!-- Technical Discovery & Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Google Developer Groups Chapter">
+  <meta property="og:url" content="https://gdg-community.dev/">
+  <meta property="og:title" content="Google Developer Groups Chapter | Connect, Learn, Grow">
+  <meta property="og:description" content="Official Google Developer Groups community portal featuring technical workshops, cloud architecture summits, and developer networking.">
+  <meta property="og:image" content="https://gdg-community.dev/assets/gdg-hero-preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Developer Groups Chapter | Connect, Learn, Grow">
+  <meta name="twitter:description" content="Official Google Developer Groups community portal featuring technical workshops, cloud architecture summits, and developer networking.">
+  <meta name="twitter:image" content="https://gdg-community.dev/assets/gdg-hero-preview.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gdg-community.dev/#organization",
+        "name": "Google Developer Groups Chapter",
+        "url": "https://gdg-community.dev/",
+        "logo": "https://gdg-community.dev/favicon.svg",
+        "sameAs": [
+          "https://github.com/gdg",
+          "https://twitter.com/googledevs"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gdg-community.dev/#website",
+        "url": "https://gdg-community.dev/",
+        "name": "Google Developer Groups Chapter",
+        "publisher": {
+          "@id": "https://gdg-community.dev/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- Sleek Semi-Transparent Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Google Developer Groups Home">
+        <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="64" height="64" rx="10" fill="#07090e" stroke="#00f0ff" stroke-width="2" />
+          <path d="M22 20 L12 32 L22 44" stroke="#00f0ff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M42 20 L52 32 L42 44" stroke="#ffd15c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="28" cy="32" r="3" fill="#ea4335" />
+          <circle cx="36" cy="32" r="3" fill="#34a853" />
+        </svg>
+        <span class="brand-title">GDG <span class="accent-cyan">Community</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#recruitment" class="nav-link">Recruitment</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#leads" class="nav-link">Leads</a>
+        <a href="members.html" class="nav-link">Members</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#events" class="btn btn-cyan">Join Chapter</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section: Holographic 3D Grid & Extruded Typography -->
+    <section class="hero-section" id="about">
+      <canvas id="hero-grid-canvas" class="hero-canvas-bg" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <div class="section-tag">Decentralized Engineering Hub</div>
+        <h1 class="hero-h1">
+          Google <span class="glow-cyan">Developer</span> <span class="glow-gold">Groups</span>
+        </h1>
+        <p class="hero-subheading">
+          <span>Connect</span> . <span>Learn</span> . <span>Grow</span>
+        </p>
+        <p class="hero-lead-text">
+          A technical ecosystem for engineers and creators building on Cloud, Android, WebAssembly, and On-Device Machine Learning.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#events" class="btn btn-cyan">Explore Events</a>
+          <a href="#recruitment" class="btn btn-secondary">Get Involved</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-wrapper">
+      <!-- Notices & Recruitment: 3D Floating Cards -->
+      <section class="section-block" id="recruitment">
+        <div class="section-header">
+          <div class="section-tag gold-tag">Open Calls & Updates</div>
+          <h2 class="section-title">Notices & Recruitment</h2>
+          <p class="section-desc">Active announcements, technical calls for proposals, and core leadership applications.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: Megaphone 3D Notice -->
+          <article class="floating-3d-card card-cyan">
+            <div class="card-shimmer" aria-hidden="true"></div>
+            <div class="card-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 11 18-5v12L3 13v-2z" />
+                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+                <path d="M16 8a4 4 0 0 1 0 8" />
+              </svg>
+            </div>
+            <span class="card-badge">Announcement</span>
+            <h3 class="card-heading">Call for Speakers: Cloud & AI Summit 2026</h3>
+            <p class="card-text">
+              We are accepting technical session proposals on distributed systems, Gemini API integration, and Kubernetes orchestration. Submit your abstract before October 28.
+            </p>
+            <a href="#events" class="btn btn-cyan">Submit Proposal</a>
+          </article>
+
+          <!-- Card 2: Mentorship Badge 3D Notice -->
+          <article class="floating-3d-card card-gold">
+            <div class="card-shimmer" aria-hidden="true"></div>
+            <div class="card-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                <path d="m9 22 3-3 3 3" />
+              </svg>
+            </div>
+            <span class="card-badge">Recruitment</span>
+            <h3 class="card-heading">Join the Core Team: Track Mentors</h3>
+            <p class="card-text">
+              Applications are open for Android, Cloud, and Machine Learning technical mentors. Lead practical code labs and guide student developer circles through structured challenges.
+            </p>
+            <a href="#leads" class="btn btn-gold">Apply as Mentor</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Upcoming Meets: Holographic Globe & 3D Info Panel -->
+      <section class="section-block" id="events">
+        <div class="section-header">
+          <div class="section-tag">Global Coordinates</div>
+          <h2 class="section-title">Upcoming Meets & Summits</h2>
+          <p class="section-desc">Rotate the 3D holographic globe to inspect upcoming community gatherings and live broadcast hubs.</p>
+        </div>
+
+        <div class="globe-section-layout">
+          <!-- 3D Interactive Holographic Globe -->
+          <div class="globe-viewport-container">
+            <canvas id="globe-canvas" aria-label="Interactive 3D globe showing global developer event coordinates"></canvas>
+            <div class="globe-pedestal-ring" aria-hidden="true"></div>
+          </div>
+
+          <!-- 3D Expandable Event Info Panel -->
+          <div class="event-info-panel">
+            <div class="event-status-pill">
+              <span class="pulse-indicator" aria-hidden="true"></span>
+              <span>LIVE REGISTRATION OPEN</span>
+            </div>
+
+            <h3 class="card-heading" id="selected-event-title">GDG Global Cloud & AI Summit</h3>
+            <p class="card-text" id="selected-event-city">Mountain View, CA</p>
+
+            <div class="event-details-grid">
+              <div class="detail-item">
+                <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                <div>
+                  <div class="detail-label">Date</div>
+                  <div class="detail-value" id="selected-event-date">Nov 14, 2026</div>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <div>
+                  <div class="detail-label">Time</div>
+                  <div class="detail-value" id="selected-event-time">10:00 AM PST</div>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div>
+                  <div class="detail-label">Venue</div>
+                  <div class="detail-value" id="selected-event-venue">Google Tech Corners & Online Broadcast</div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-gold" id="rsvp-btn">Confirm RSVP Pass</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- GDG Memories: 3D Curved Photo Carousel -->
+      <section class="section-block" id="gallery">
+        <div class="section-header">
+          <div class="section-tag gold-tag">Community Archive</div>
+          <h2 class="section-title">GDG Memories</h2>
+          <p class="section-desc">Snapshots from hands-on hackathons, technical conferences, and code labs.</p>
+        </div>
+
+        <div class="carousel-outer" id="memories-carousel">
+          <div class="carousel-stage">
+            <!-- Slide 0 -->
+            <div class="carousel-slide" data-pos="0">
+              <svg viewBox="0 0 440 280" width="100%" height="100%" aria-label="DevFest Mainstage Keynote">
+                <rect width="440" height="280" fill="#0b0f19" />
+                <circle cx="220" cy="90" r="60" fill="rgba(0, 240, 255, 0.15)" />
+                <path d="M160 210 L280 210 L260 140 L180 140 Z" fill="#1e293b" stroke="#00f0ff" stroke-width="2" />
+                <text x="220" y="245" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle" font-family="sans-serif">DevFest Mainstage Keynote</text>
+              </svg>
+              <div class="slide-overlay">
+                <div class="slide-caption-title">DevFest Mainstage Keynote</div>
+                <div class="slide-caption-sub">Auditorium Hall, 650 Attendees</div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="carousel-slide" data-pos="1">
+              <svg viewBox="0 0 440 280" width="100%" height="100%" aria-label="Cloud Architecture Hackathon">
+                <rect width="440" height="280" fill="#0c111d" />
+                <rect x="70" y="70" width="300" height="120" rx="8" fill="#161f30" stroke="#ffd15c" stroke-width="2" />
+                <text x="220" y="245" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle" font-family="sans-serif">Cloud Hackathon Sprint</text>
+              </svg>
+              <div class="slide-overlay">
+                <div class="slide-caption-title">Cloud Hackathon Sprint</div>
+                <div class="slide-caption-sub">36 Hours of Collaborative Coding</div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" data-pos="2">
+              <svg viewBox="0 0 440 280" width="100%" height="100%" aria-label="Android Jetpack Code Lab">
+                <rect width="440" height="280" fill="#0b0e17" />
+                <path d="M120 180 L220 80 L320 180 Z" fill="rgba(0, 240, 255, 0.1)" stroke="#00f0ff" stroke-width="2" />
+                <text x="220" y="245" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle" font-family="sans-serif">Android Jetpack Code Lab</text>
+              </svg>
+              <div class="slide-overlay">
+                <div class="slide-caption-title">Android Jetpack Code Lab</div>
+                <div class="slide-caption-sub">Hands-on Compose & Performance Tuning</div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" data-pos="-1">
+              <svg viewBox="0 0 440 280" width="100%" height="100%" aria-label="On-Device Machine Learning Workshop">
+                <rect width="440" height="280" fill="#080c14" />
+                <circle cx="160" cy="120" r="30" fill="none" stroke="#ffd15c" stroke-width="3" />
+                <circle cx="280" cy="120" r="30" fill="none" stroke="#00f0ff" stroke-width="3" />
+                <line x1="190" y1="120" x2="250" y2="120" stroke="#94a3b8" stroke-width="2" />
+                <text x="220" y="245" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle" font-family="sans-serif">On-Device ML Workshop</text>
+              </svg>
+              <div class="slide-overlay">
+                <div class="slide-caption-title">On-Device ML Workshop</div>
+                <div class="slide-caption-sub">TensorFlow Lite & WebGPU Benchmarks</div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide" data-pos="-2">
+              <svg viewBox="0 0 440 280" width="100%" height="100%" aria-label="Open Source Demo Showcase">
+                <rect width="440" height="280" fill="#0d1320" />
+                <rect x="110" y="60" width="220" height="140" rx="6" fill="#1a2333" stroke="#00f0ff" stroke-width="1.5" />
+                <text x="220" y="245" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle" font-family="sans-serif">Open Source Demo Night</text>
+              </svg>
+              <div class="slide-overlay">
+                <div class="slide-caption-title">Open Source Demo Night</div>
+                <div class="slide-caption-sub">12 Projects Presented to Mentors</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" class="carousel-nav-btn" id="carousel-prev" aria-label="Previous Memory Slide">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Memory slide selection"></div>
+            <button type="button" class="carousel-nav-btn" id="carousel-next" aria-label="Next Memory Slide">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline of Excellence: Twisting 3D Metallic Ribbon & Milestones -->
+      <section class="section-block">
+        <div class="section-header">
+          <div class="section-tag">Milestone Journey</div>
+          <h2 class="section-title">Timeline of Excellence</h2>
+          <p class="section-desc">Key inflection points across our chapter history along the 3D metallic ribbon path.</p>
+        </div>
+
+        <div class="timeline-canvas-container">
+          <!-- Flowing 3D Metallic Ribbon Vector -->
+          <svg class="timeline-ribbon-svg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="metallic-ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#475569" stop-opacity="0.3" />
+                <stop offset="25%" stop-color="#ffd15c" stop-opacity="0.8" />
+                <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.9" />
+                <stop offset="75%" stop-color="#cbd5e1" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#ffd15c" stop-opacity="0.9" />
+              </linearGradient>
+            </defs>
+            <path d="M 0,60 C 200,10 400,110 600,60 C 800,10 1000,110 1200,60" fill="none" stroke="url(#metallic-ribbon)" stroke-width="8" stroke-linecap="round" />
+            <path d="M 0,60 C 200,10 400,110 600,60 C 800,10 1000,110 1200,60" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2" stroke-linecap="round" />
+          </svg>
+
+          <div class="timeline-nodes-grid">
+            <!-- Node 2019 -->
+            <div class="timeline-node-card">
+              <div class="timeline-year-node">2019</div>
+              <h3 class="card-heading">Chapter Inauguration</h3>
+              <p class="card-text">
+                Founded with 45 inaugural engineers. Hosted the first regional Android development bootcamp and official Google I/O Extended viewing party.
+              </p>
+            </div>
+
+            <!-- Node 2020 -->
+            <div class="timeline-node-card">
+              <div class="timeline-year-node">2020</div>
+              <h3 class="card-heading">Global Virtual Pivot</h3>
+              <p class="card-text">
+                Transitioned to worldwide distributed livestreams, conducting 50 hands-on Cloud study jams and cross-chapter hackathons with international speakers.
+              </p>
+            </div>
+
+            <!-- Node 2024 -->
+            <div class="timeline-node-card">
+              <div class="timeline-year-node">2024</div>
+              <h3 class="card-heading">On-Device AI Revolution</h3>
+              <p class="card-text">
+                Launched the regional Machine Learning accelerator track, mentoring over 1,200 developers on generative AI architectures and WebAssembly runtimes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet Our Core Leads: 3D Avatars & Rotating Pedestals -->
+      <section class="section-block" id="leads">
+        <div class="section-header">
+          <div class="section-tag gold-tag">Engineering Leadership</div>
+          <h2 class="section-title">Meet Our Core Leads</h2>
+          <p class="section-desc">Active organizers driving curriculum, workshops, and community mentorship.</p>
+        </div>
+
+        <div class="leads-grid">
+          <!-- Lead 1: Chapter Lead -->
+          <div class="lead-pedestal-card">
+            <div class="lead-platform-visual">
+              <div class="lead-avatar-render">
+                <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Alex Rivera portrait render">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="lead-hex-platform" aria-hidden="true"></div>
+            </div>
+            <div class="lead-info-plate">
+              <h3 class="lead-name">Alex Rivera</h3>
+              <div class="lead-role">Chapter Lead & Cloud Architect</div>
+              <div class="lead-tags">
+                <span class="lead-tag-item">Google Cloud</span>
+                <span class="lead-tag-item">Kubernetes</span>
+                <span class="lead-tag-item">Go</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead 2: Machine Learning Lead -->
+          <div class="lead-pedestal-card">
+            <div class="lead-platform-visual">
+              <div class="lead-avatar-render">
+                <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#ffd15c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Priya Sharma portrait render">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="lead-hex-platform" aria-hidden="true"></div>
+            </div>
+            <div class="lead-info-plate">
+              <h3 class="lead-name">Priya Sharma</h3>
+              <div class="lead-role">Machine Learning Lead & Research Engineer</div>
+              <div class="lead-tags">
+                <span class="lead-tag-item">TensorFlow</span>
+                <span class="lead-tag-item">Gemini API</span>
+                <span class="lead-tag-item">PyTorch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead 3: Mobile Lead -->
+          <div class="lead-pedestal-card">
+            <div class="lead-platform-visual">
+              <div class="lead-avatar-render">
+                <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="Marcus Vance portrait render">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="lead-hex-platform" aria-hidden="true"></div>
+            </div>
+            <div class="lead-info-plate">
+              <h3 class="lead-name">Marcus Vance</h3>
+              <div class="lead-role">Mobile Systems Lead & Android GDE</div>
+              <div class="lead-tags">
+                <span class="lead-tag-item">Android Jetpack</span>
+                <span class="lead-tag-item">Kotlin</span>
+                <span class="lead-tag-item">Compose</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Final CTA Section: 3D Rocket Launch & Neon Exhaust Plume -->
+    <section class="rocket-cta-section">
+      <div class="rocket-launch-viewport">
+        <!-- 3D Rocket Vector Model -->
+        <svg class="rocket-svg-asset" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="3D Space Rocket Ready for Launch">
+          <!-- Rocket Body -->
+          <path d="M50 10 C35 35 30 75 30 110 L70 110 C70 75 65 35 50 10 Z" fill="#1e293b" stroke="#00f0ff" stroke-width="2.5" />
+          <!-- Nosecone -->
+          <path d="M50 10 C44 24 40 38 40 50 L60 50 C60 38 56 24 50 10 Z" fill="#ffd15c" />
+          <!-- Viewport Window -->
+          <circle cx="50" cy="65" r="10" fill="#07090e" stroke="#00f0ff" stroke-width="2" />
+          <circle cx="50" cy="65" r="5" fill="#00f0ff" />
+          <!-- Left Fin -->
+          <path d="M30 90 L12 120 L30 115 Z" fill="#0f172a" stroke="#00f0ff" stroke-width="2" />
+          <!-- Right Fin -->
+          <path d="M70 90 L88 120 L70 115 Z" fill="#0f172a" stroke="#00f0ff" stroke-width="2" />
+          <!-- Center Engine Thruster -->
+          <rect x="42" y="110" width="16" height="8" rx="2" fill="#334155" stroke="#ffd15c" stroke-width="1.5" />
+        </svg>
+
+        <!-- Volumetric Neon Exhaust Plume -->
+        <div class="rocket-exhaust-plume" aria-hidden="true"></div>
+      </div>
+
+      <h2 class="section-title">Launch Your Developer Journey</h2>
+      <p class="section-desc" style="margin-bottom: 2rem;">
+        Connect with seasoned Google Developer Experts, build hands-on open-source projects, and accelerate your engineering career.
+      </p>
+
+      <a href="#events" class="btn btn-cyan" id="launch-cta-btn">Join GDG Chapter Today</a>
+    </section>
+  </main>
+
+  <!-- Clean Obsidian Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand-logo">
+          <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="10" fill="#07090e" stroke="#00f0ff" stroke-width="1.5" />
+            <path d="M22 20 L12 32 L22 44" stroke="#00f0ff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M42 20 L52 32 L42 44" stroke="#ffd15c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="brand-title">Google Developer Groups</span>
+        </div>
+        <p class="footer-brand-desc">
+          An independent community group of software engineers and researchers. Activities and the opinions expressed here should in no way be linked to Google, the corporation.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <ul class="footer-links-list">
+          <li><a href="#about">About GDG</a></li>
+          <li><a href="#recruitment">Recruitment & Calls</a></li>
+          <li><a href="#events">Upcoming Summits</a></li>
+          <li><a href="#gallery">Archive Gallery</a></li>
+          <li><a href="#leads">Core Organizers</a></li>
+          <li><a href="members.html">Members Directory</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Legal & Technical</div>
+        <ul class="footer-links-list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms and Conditions</a></li>
+          <li><a href="sitemap.xml">XML Sitemap</a></li>
+          <li><a href="llms.txt">LLM Discovery Guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="footer-disclaimer">
+        &copy; 2026 Google Developer Groups Community Chapter. All rights reserved.
+      </div>
+      <div>
+        <a href="#about" class="nav-link">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==========================================================================
+       Google Developer Groups (GDG) - Client Interaction Architecture
+       Supports both file:// direct launch and HTTP server hosting without CORS blocks
+       ========================================================================== */
+
+    // 1. Swirling Holographic 3D Data Network Grid
+    function initNetworkGrid(canvasId) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+      let mouseX = width / 2;
+      let mouseY = height / 2;
+      let targetMouseX = mouseX;
+      let targetMouseY = mouseY;
+      let time = 0;
+
+      const cols = 28;
+      const rows = 20;
+      const spacing = 58;
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }, { passive: true });
+
+      window.addEventListener('mousemove', (e) => {
+        targetMouseX = e.clientX;
+        targetMouseY = e.clientY;
+      }, { passive: true });
+
+      function render() {
+        time += 0.015;
+        mouseX += (targetMouseX - mouseX) * 0.05;
+        mouseY += (targetMouseY - mouseY) * 0.05;
+
+        ctx.clearRect(0, 0, width, height);
+
+        const originX = width / 2;
+        const originY = height * 0.38;
+        const tilt = 0.58;
+        const points = [];
+
+        for (let r = 0; r < rows; r++) {
+          const rowPoints = [];
+          for (let c = 0; c < cols; c++) {
+            const xOffset = (c - cols / 2) * spacing;
+            const yOffset = (r - rows / 2) * spacing;
+            const distFromCenter = Math.hypot(xOffset, yOffset);
+            const wave = Math.sin(distFromCenter * 0.018 - time * 1.8) * 22;
+            const mouseDist = Math.hypot(originX + xOffset - mouseX, originY + yOffset * tilt - mouseY);
+            const mouseElevation = Math.max(0, (260 - mouseDist) * 0.12);
+
+            const projX = originX + xOffset;
+            const projY = originY + yOffset * tilt - wave - mouseElevation;
+            rowPoints.push({ x: projX, y: projY });
+          }
+          points.push(rowPoints);
+        }
+
+        ctx.lineWidth = 1;
+        for (let r = 0; r < rows; r++) {
+          ctx.beginPath();
+          for (let c = 0; c < cols; c++) {
+            const pt = points[r][c];
+            if (c === 0) ctx.moveTo(pt.x, pt.y);
+            else ctx.lineTo(pt.x, pt.y);
+          }
+          ctx.strokeStyle = `rgba(0, 240, 255, ${0.07 + (r / rows) * 0.18})`;
+          ctx.stroke();
+        }
+
+        for (let c = 0; c < cols; c++) {
+          ctx.beginPath();
+          for (let r = 0; r < rows; r++) {
+            const pt = points[r][c];
+            if (r === 0) ctx.moveTo(pt.x, pt.y);
+            else ctx.lineTo(pt.x, pt.y);
+          }
+          ctx.strokeStyle = `rgba(0, 240, 255, ${0.07 + Math.sin((c / cols) * Math.PI) * 0.15})`;
+          ctx.stroke();
+        }
+
+        for (let r = 0; r < rows; r += 2) {
+          for (let c = 0; c < cols; c += 2) {
+            const pt = points[r][c];
+            const isGold = (r + c) % 6 === 0;
+            ctx.beginPath();
+            ctx.arc(pt.x, pt.y, isGold ? 2.5 : 1.8, 0, Math.PI * 2);
+            ctx.fillStyle = isGold ? '#ffd15c' : '#00f0ff';
+            ctx.shadowColor = isGold ? '#ffd15c' : '#00f0ff';
+            ctx.shadowBlur = isGold ? 10 : 8;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+    }
+
+    // 2. Holographic 3D Interactive Globe
+    function initHolographicGlobe(canvasId, onSelectEvent) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      let width = (canvas.width = canvas.parentElement.clientWidth || 450);
+      let height = (canvas.height = canvas.parentElement.clientHeight || 450);
+      let rotationY = 0;
+      let rotationX = 0.22;
+      let isDragging = false;
+      let lastMouseX = 0;
+      let lastMouseY = 0;
+      let arcProgress = 0;
+      const globeRadius = Math.min(width, height) * 0.38;
+
+      const events = [
+        { id: 'sf', title: 'GDG Global Cloud & AI Summit', city: 'Mountain View, CA', date: 'Nov 14, 2026', time: '10:00 AM PST', venue: 'Google Tech Corners & Online Broadcast', lat: 37.422, lon: -122.084, isPrimary: true },
+        { id: 'lon', title: 'DevFest London: Mobile & Web', city: 'London, UK', date: 'Dec 02, 2026', time: '09:30 AM GMT', venue: 'Kings Cross Campus', lat: 51.5074, lon: -0.1278 },
+        { id: 'blr', title: 'DevFest Bengaluru: Scalable Systems', city: 'Bengaluru, India', date: 'Dec 12, 2026', time: '10:00 AM IST', venue: 'Convention Hall & Stream', lat: 12.9716, lon: 77.5946 },
+        { id: 'tyo', title: 'GDG Tokyo: On-Device Intelligence', city: 'Tokyo, Japan', date: 'Jan 18, 2027', time: '13:00 JST', venue: 'Roppongi Hills Hall', lat: 35.6762, lon: 139.6503 },
+        { id: 'zrh', title: 'GDG Zurich: AI Security & Systems', city: 'Zurich, Switzerland', date: 'Feb 05, 2027', time: '14:00 CET', venue: 'Europaallee Tech Hub', lat: 47.3769, lon: 8.5417 }
+      ];
+
+      const spherePoints = [];
+      const latSteps = 30;
+      const lonSteps = 50;
+
+      for (let i = 0; i < latSteps; i++) {
+        const lat = ((i / (latSteps - 1)) * 180 - 90) * (Math.PI / 180);
+        const y = Math.sin(lat) * globeRadius;
+        const rRing = Math.cos(lat) * globeRadius;
+        for (let j = 0; j < lonSteps; j++) {
+          const lon = ((j / lonSteps) * 360) * (Math.PI / 180);
+          const x = Math.cos(lon) * rRing;
+          const z = Math.sin(lon) * rRing;
+          const continentNoise = Math.sin(lat * 3) * Math.cos(lon * 2) + Math.sin(lat * 5 + lon * 3);
+          if (continentNoise > -0.2) {
+            spherePoints.push({ x0: x, y0: y, z0: z });
+          }
+        }
+      }
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = canvas.parentElement.clientWidth || 450;
+        height = canvas.height = canvas.parentElement.clientHeight || 450;
+      }, { passive: true });
+
+      canvas.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        lastMouseX = e.clientX;
+        lastMouseY = e.clientY;
+      });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        rotationY += (e.clientX - lastMouseX) * 0.006;
+        rotationX = Math.max(-0.8, Math.min(0.8, rotationX + (e.clientY - lastMouseY) * 0.006));
+        lastMouseX = e.clientX;
+        lastMouseY = e.clientY;
+      });
+
+      function rotate3D(x, y, z) {
+        const cosX = Math.cos(rotationX);
+        const sinX = Math.sin(rotationX);
+        const y1 = y * cosX - z * sinX;
+        const z1 = y * sinX + z * cosX;
+        const cosY = Math.cos(rotationY);
+        const sinY = Math.sin(rotationY);
+        return { x: x * cosY + z1 * sinY, y: y1, z: -x * sinY + z1 * cosY };
+      }
+
+      function getEventCoords(ev) {
+        const phi = (90 - ev.lat) * (Math.PI / 180);
+        const theta = (ev.lon + 180) * (Math.PI / 180);
+        const x = -globeRadius * Math.sin(phi) * Math.cos(theta);
+        const y = globeRadius * Math.cos(phi);
+        const z = globeRadius * Math.sin(phi) * Math.sin(theta);
+        return rotate3D(x, y, z);
+      }
+
+      function renderGlobe() {
+        if (!isDragging) rotationY += 0.004;
+        arcProgress = (arcProgress + 0.008) % 1;
+
+        ctx.clearRect(0, 0, width, height);
+        const centerX = width / 2;
+        const centerY = height / 2;
+
+        const grad = ctx.createRadialGradient(centerX, centerY, globeRadius * 0.7, centerX, centerY, globeRadius * 1.25);
+        grad.addColorStop(0, 'rgba(0, 240, 255, 0.08)');
+        grad.addColorStop(0.8, 'rgba(0, 240, 255, 0.02)');
+        grad.addColorStop(1, 'transparent');
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, globeRadius * 1.2, 0, Math.PI * 2);
+        ctx.fill();
+
+        for (let i = 0; i < spherePoints.length; i++) {
+          const p = spherePoints[i];
+          const r = rotate3D(p.x0, p.y0, p.z0);
+          if (r.z > -globeRadius * 0.25) {
+            const alpha = Math.max(0.08, Math.min(0.85, ((r.z + globeRadius) / (globeRadius * 2)) * 0.7));
+            ctx.beginPath();
+            ctx.arc(centerX + r.x, centerY + r.y, 1.25, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0, 240, 255, ${alpha})`;
+            ctx.fill();
+          }
+        }
+
+        const projectedEvents = events.map(ev => ({ ...ev, proj: getEventCoords(ev) }));
+        const sfEvent = projectedEvents[0];
+        for (let k = 1; k < projectedEvents.length; k++) {
+          const target = projectedEvents[k];
+          if (sfEvent.proj.z > -100 || target.proj.z > -100) {
+            const p1x = centerX + sfEvent.proj.x;
+            const p1y = centerY + sfEvent.proj.y;
+            const p2x = centerX + target.proj.x;
+            const p2y = centerY + target.proj.y;
+            const midX = (p1x + p2x) / 2;
+            const midY = (p1y + p2y) / 2 - 40;
+
+            ctx.beginPath();
+            ctx.moveTo(p1x, p1y);
+            ctx.quadraticCurveTo(midX, midY, p2x, p2y);
+            ctx.strokeStyle = 'rgba(255, 209, 92, 0.28)';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            const t = (arcProgress + k * 0.25) % 1;
+            const pulseX = (1 - t) * (1 - t) * p1x + 2 * (1 - t) * t * midX + t * t * p2x;
+            const pulseY = (1 - t) * (1 - t) * p1y + 2 * (1 - t) * t * midY + t * t * p2y;
+            ctx.beginPath();
+            ctx.arc(pulseX, pulseY, 2.5, 0, Math.PI * 2);
+            ctx.fillStyle = '#ffd15c';
+            ctx.shadowColor = '#ffd15c';
+            ctx.shadowBlur = 8;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+        }
+
+        projectedEvents.forEach((ev) => {
+          if (ev.proj.z > -40) {
+            const pinX = centerX + ev.proj.x;
+            const pinY = centerY + ev.proj.y;
+            ctx.beginPath();
+            ctx.arc(pinX, pinY, 7 + Math.sin(Date.now() * 0.005) * 2, 0, Math.PI * 2);
+            ctx.strokeStyle = ev.isPrimary ? 'rgba(255, 209, 92, 0.6)' : 'rgba(0, 240, 255, 0.5)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(pinX, pinY, 4, 0, Math.PI * 2);
+            ctx.fillStyle = ev.isPrimary ? '#ffd15c' : '#00f0ff';
+            ctx.shadowColor = ev.isPrimary ? '#ffd15c' : '#00f0ff';
+            ctx.shadowBlur = 12;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+        });
+
+        requestAnimationFrame(renderGlobe);
+      }
+      renderGlobe();
+
+      canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const clickX = e.clientX - rect.left - width / 2;
+        const clickY = e.clientY - rect.top - height / 2;
+        const projectedEvents = events.map(ev => ({ ...ev, proj: getEventCoords(ev) }));
+        for (const ev of projectedEvents) {
+          if (ev.proj.z > 0 && Math.hypot(ev.proj.x - clickX, ev.proj.y - clickY) < 24) {
+            if (onSelectEvent) onSelectEvent(ev);
+            break;
+          }
+        }
+      });
+    }
+
+    // 3. GDG Memories: 3D Curved Photo Carousel (Natural Smooth Transitions & Autoplay Loop)
+    function initCurvedCarousel(carouselId) {
+      const container = document.getElementById(carouselId);
+      if (!container) return;
+
+      const slides = Array.from(container.querySelectorAll('.carousel-slide'));
+      if (slides.length === 0) return;
+
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      const dotsContainer = document.getElementById('carousel-dots');
+
+      let currentIndex = 0;
+      let autoplayTimer = null;
+      let isHovered = false;
+      const AUTOPLAY_INTERVAL = 3400;
+
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        slides.forEach((_, idx) => {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', `Navigate to memory slide ${idx + 1}`);
+          dot.addEventListener('click', (e) => {
+            e.stopPropagation();
+            goTo(idx);
+            restartAutoplay();
+          });
+          dotsContainer.appendChild(dot);
+        });
+      }
+
+      function updateDots() {
+        if (!dotsContainer) return;
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
+        dots.forEach((dot, idx) => {
+          if (idx === currentIndex) {
+            dot.classList.add('active');
+            dot.setAttribute('aria-current', 'true');
+          } else {
+            dot.classList.remove('active');
+            dot.removeAttribute('aria-current');
+          }
+        });
+      }
+
+      function updateCarousel() {
+        const total = slides.length;
+        slides.forEach((slide, i) => {
+          let offset = (i - currentIndex) % total;
+          if (offset > Math.floor(total / 2)) offset -= total;
+          else if (offset < -Math.floor(total / 2)) offset += total;
+
+          const prevPosAttr = slide.getAttribute('data-pos');
+          const prevPos = prevPosAttr !== null ? parseInt(prevPosAttr, 10) : offset;
+          const newPos = offset;
+
+          if (Math.abs(prevPos - newPos) > 2) {
+            slide.classList.add('no-transition');
+            slide.setAttribute('data-pos', newPos.toString());
+            void slide.offsetWidth;
+            requestAnimationFrame(() => {
+              slide.classList.remove('no-transition');
+            });
+          } else {
+            slide.setAttribute('data-pos', newPos.toString());
+          }
+
+          slide.setAttribute('aria-hidden', offset === 0 ? 'false' : 'true');
+        });
+        updateDots();
+      }
+
+      function goNext() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+      }
+
+      function goPrev() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel();
+      }
+
+      function goTo(idx) {
+        currentIndex = ((idx % slides.length) + slides.length) % slides.length;
+        updateCarousel();
+      }
+
+      function startAutoplay() {
+        stopAutoplay();
+        if (!isHovered) {
+          autoplayTimer = setInterval(() => {
+            goNext();
+          }, AUTOPLAY_INTERVAL);
+        }
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) {
+          clearInterval(autoplayTimer);
+          autoplayTimer = null;
+        }
+      }
+
+      function restartAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          goNext();
+          restartAutoplay();
+        });
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          goPrev();
+          restartAutoplay();
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          goNext();
+          restartAutoplay();
+        } else if (e.key === 'ArrowLeft') {
+          goPrev();
+          restartAutoplay();
+        }
+      });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+      container.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          stopAutoplay();
+        }
+      }, { passive: true });
+
+      container.addEventListener('touchend', (e) => {
+        if (e.changedTouches.length === 1) {
+          const diffX = e.changedTouches[0].clientX - touchStartX;
+          const diffY = e.changedTouches[0].clientY - touchStartY;
+          if (Math.abs(diffX) > 35 && Math.abs(diffX) > Math.abs(diffY)) {
+            if (diffX < 0) goNext();
+            else goPrev();
+          }
+        }
+        startAutoplay();
+      }, { passive: true });
+
+      slides.forEach((slide, idx) => {
+        slide.addEventListener('click', () => {
+          if (currentIndex !== idx) {
+            goTo(idx);
+            restartAutoplay();
+          }
+        });
+      });
+
+      container.addEventListener('mouseenter', () => {
+        isHovered = true;
+        stopAutoplay();
+      });
+
+      container.addEventListener('mouseleave', () => {
+        isHovered = false;
+        startAutoplay();
+      });
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stopAutoplay();
+        else if (!isHovered) startAutoplay();
+      });
+
+      updateCarousel();
+      startAutoplay();
+    }
+
+    // 4. Timeline & Rocket Launch Interactivity
+    function initInteractivity() {
+      const cards = document.querySelectorAll('.timeline-node-card');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', () => { card.style.transform = 'translateY(-8px) scale(1.02)'; });
+        card.addEventListener('mouseleave', () => { card.style.transform = 'translateY(0) scale(1)'; });
+      });
+
+      const rocket = document.querySelector('.rocket-svg-asset');
+      const launchBtn = document.getElementById('launch-cta-btn');
+      const exhaust = document.querySelector('.rocket-exhaust-plume');
+
+      if (launchBtn && rocket) {
+        launchBtn.addEventListener('mouseenter', () => {
+          rocket.style.transform = 'translateY(-20px) scale(1.08)';
+          if (exhaust) {
+            exhaust.style.height = '120px';
+            exhaust.style.filter = 'blur(6px)';
+            exhaust.style.boxShadow = '0 0 40px #00f0ff, 0 0 70px rgba(0, 240, 255, 0.9)';
+          }
+        });
+        launchBtn.addEventListener('mouseleave', () => {
+          rocket.style.transform = '';
+          if (exhaust) {
+            exhaust.style.height = '';
+            exhaust.style.filter = '';
+            exhaust.style.boxShadow = '';
+          }
+        });
+      }
+
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          const rect = this.getBoundingClientRect();
+          const ripple = document.createElement('span');
+          ripple.classList.add('ripple');
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = `${size}px`;
+          ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+          ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+          this.appendChild(ripple);
+          setTimeout(() => { ripple.remove(); }, 500);
+        });
+      });
+    }
+
+    // 5. Header Navigation & Active Scroll-Spy
+    function initNavigation() {
+      const navLinks = document.querySelectorAll('.main-nav .nav-link');
+      const sections = document.querySelectorAll('section[id]');
+      const headerOffset = 90;
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const targetId = href.substring(1);
+            const targetElem = document.getElementById(targetId);
+            if (targetElem) {
+              e.preventDefault();
+              navLinks.forEach(l => l.classList.remove('active'));
+              this.classList.add('active');
+
+              const targetPosition = targetElem.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo({
+                top: Math.max(0, targetPosition - headerOffset),
+                behavior: 'smooth'
+              });
+
+              if (window.history && window.history.pushState) {
+                window.history.pushState(null, null, href);
+              }
+            }
+          }
+        });
+      });
+
+      function updateActiveNav() {
+        const scrollPosition = window.pageYOffset + headerOffset + 60;
+        let activeSectionId = '';
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            activeSectionId = section.getAttribute('id');
+          }
+        });
+
+        if (activeSectionId) {
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === '#' + activeSectionId) {
+              link.classList.add('active');
+            } else if (href && href.startsWith('#')) {
+              link.classList.remove('active');
+            }
+          });
+        }
+      }
+
+      window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+      // Handle direct hash navigation on initial load
+      if (window.location.hash) {
+        setTimeout(() => {
+          const target = document.querySelector(window.location.hash);
+          if (target) {
+            const targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: Math.max(0, targetPos - headerOffset),
+              behavior: 'smooth'
+            });
+            const hashLink = document.querySelector(`.main-nav a[href="${window.location.hash}"]`);
+            if (hashLink) {
+              navLinks.forEach(l => l.classList.remove('active'));
+              hashLink.classList.add('active');
+            }
+          }
+        }, 150);
+      }
+    }
+
+    // Main Orchestrator Run
+    function startClient() {
+      initNetworkGrid('hero-grid-canvas');
+
+      const eventTitle = document.getElementById('selected-event-title');
+      const eventCity = document.getElementById('selected-event-city');
+      const eventDate = document.getElementById('selected-event-date');
+      const eventTime = document.getElementById('selected-event-time');
+      const eventVenue = document.getElementById('selected-event-venue');
+
+      initHolographicGlobe('globe-canvas', (ev) => {
+        if (eventTitle) eventTitle.textContent = ev.title;
+        if (eventCity) eventCity.textContent = ev.city;
+        if (eventDate) eventDate.textContent = ev.date;
+        if (eventTime) eventTime.textContent = ev.time;
+        if (eventVenue) eventVenue.textContent = ev.venue;
+      });
+
+      initCurvedCarousel('memories-carousel');
+      initInteractivity();
+      initNavigation();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', startClient);
+    } else {
+      startClient();
+    }
+  </script>
+</body>
+</html>

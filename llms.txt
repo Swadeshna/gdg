@@ -1,0 +1,21 @@
+# Google Developer Group (GDG) Chapter
+
+> High-performance developer community platform for engineers, creators, and open-source contributors.
+
+## Overview
+This platform serves as the central hub for our Google Developer Group chapter. It facilitates peer-to-peer technical knowledge sharing, hands-on workshops, hackathons, and open-source collaborations centered around Android, Google Cloud Platform, Machine Learning, Web Technologies, and Flutter.
+
+## Core Endpoints
+- Root Portal: https://gdg-community.dev/
+- Members Directory: https://gdg-community.dev/members.html
+- Privacy Policy: https://gdg-community.dev/privacy.html
+- Terms of Service: https://gdg-community.dev/terms.html
+- XML Sitemap: https://gdg-community.dev/sitemap.xml
+
+## Community Tracks
+- AI & Machine Learning: On-device inference, Gemini API integration, and model optimization.
+- Cloud Systems: Infrastructure engineering, Kubernetes, serverless architecture, and distributed databases.
+- Mobile & Modern Web: Android Jetpack, WebAssembly, modern browser APIs, and cross-platform Flutter solutions.
+
+## Code of Conduct
+We adhere strictly to the global Google Developer Community Guidelines. Our community fosters an inclusive, respectful, and harassment-free environment for developers across all backgrounds.
